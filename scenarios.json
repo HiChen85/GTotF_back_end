@@ -1,0 +1,120 @@
+{
+  "name": "GraphTheoryOnTheFarm",
+  "version": "1.0.0",
+  "scenario1": {
+    "farmer": {
+      "Karl": ["Carrots", "Grass"],
+      "Otto": ["Carrots", "Wheat", "Rye"],
+      "Jim": ["Carrots", "Hay"],
+      "Martin": ["Wheat", "Rye"],
+      "Laura": ["Carrots", "Wheat", "Rye"]
+    },
+    "animals": {
+      "Chicken": ["Wheat", "Rye"],
+      "Pig": ["Wheat", "Rye"],
+      "Sheep": ["Carrots", "Hay"],
+      "Cow": ["Grass", "Hay"],
+      "Horse": ["Carrots"]
+    }
+  },
+
+  "scenario2": {
+    "farmer": {
+      "Karl": ["Carrots", "Grass"],
+      "Otto": ["Carrots", "Wheat", "Rye"],
+      "Jim": ["Carrots", "Grass","Hay"],
+      "Martin": ["Wheat", "Rye"],
+      "Laura": ["Carrots", "Wheat", "Rye"]
+    },
+    "animals": {
+      "Chicken": ["Wheat", "Rye"],
+      "Pig": ["Wheat", "Rye", "Carrots"],
+      "Sheep": ["Grass"],
+      "Cow": ["Grass", "Carrots"],
+      "Horse": ["Carrots"]
+    }
+  },
+
+  "scenario3": {
+    "farmer": {
+      "Karl": ["Wheat"],
+      "Otto": ["Wheat", "Rye"],
+      "Jim": ["Carrots", "Hay"],
+      "Martin": ["Wheat", "Rye", "Grass"],
+      "Laura": ["Grass"]
+    },
+    "animals": {
+      "Chicken": ["Grass"],
+      "Pig": ["Rye"],
+      "Sheep": ["Hay"],
+      "Cow": ["Wheat", "Rye"],
+      "Horse": ["Carrots"]
+    }
+  },
+
+  "scenario4": {
+    "farmer": {
+      "Karl": ["Wheat","Carrots", "Hay"],
+      "Otto": ["Grass","Rye"],
+      "Jim": ["Wheat","Carrots", "Hay"],
+      "Martin": ["Grass", "Rye"],
+      "Laura": ["Grass", "Rye"]
+    },
+    "animals": {
+      "Chicken": ["Rye", "Grass"],
+      "Pig": ["Rye", "Grass"],
+      "Sheep": ["Hay", "Carrots"],
+      "Cow": ["Wheat","Carrots","Hay"],
+      "Horse": ["Wheat","Carrots", "Hay"]
+    }
+  },
+
+  "scenario5": {
+    "farmer": {
+      "Karl": ["Wheat","Carrots"],
+      "Otto": ["Wheat", "Carrots"],
+      "Jim": ["Hay", "Rye", "Grass"],
+      "Martin": ["Wheat", "Carrots"],
+      "Laura": ["Wheat", "Carrots"]
+    },
+    "animals": {
+       "Chicken": ["Grass", "Rye", "Hay"],
+      "Pig": ["Rye", "Hay"],
+      "Sheep": ["Hay", "Rye", "Grass"],
+      "Cow": ["Wheat", "Carrots"],
+      "Horse": ["Carrots", "Wheat"]
+    }
+  },
+  "scenario6": {
+    "farmer": {
+       "Karl": ["Carrots"],
+      "Otto": ["Wheat"],
+      "Jim": ["Hay", "Wheat"],
+      "Martin": ["Rye", "Grass"],
+      "Laura": ["Rye"]
+    },
+    "animals": {
+      "Chicken": ["Grass"],
+      "Pig": ["Rye"],
+      "Sheep": ["Hay"],
+      "Cow": ["Wheat", "Rye"],
+      "Horse": ["Wheat"]
+    }
+  },
+  "scenario7": {
+    "farmer": {
+      "Karl": ["Carrots", "Hay"],
+      "Otto": ["Carrots", "Grass"],
+      "Jim": ["Carrots","Wheat", "Hay"],
+      "Martin": ["Grass"],
+      "Laura": ["Grass", "Wheat", "Rye"]
+    },
+    "animals": {
+      "Chicken": ["Hay"],
+      "Pig": ["Grass"],
+      "Sheep": ["Wheat", "Rye"],
+      "Cow": ["Grass"],
+      "Horse": ["Carrots"]
+    }
+  }
+}
