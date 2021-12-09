@@ -5,8 +5,10 @@ from EK import EK
 
 
 def get_data(scenario:str):
+    # open the json file and read data from it
     with open('scenarios.json', 'r', encoding="UTF-8") as f:
         data = json.loads(f.read())
+    # return the specific scenario data
     return data[scenario]
 
 
@@ -18,14 +20,24 @@ s5 = get_data("scenario5")
 s6 = get_data("scenario6")
 s7 = get_data("scenario7")
 
+
 def generate_bipartite_graph(scenario:dict):
+    """
+    scenario: scenario data
+    return: a bipartite graph
+    """
+
+    # generate a graph
     g = nx.DiGraph(name="bipartite_graph")
+    # read scenario data
     farmers = scenario['farmer']
     animals = scenario['animals']
-    
+
+    # set groups of bipartite graph, animal is group 0, farmer is group 1
     g.add_nodes_from(farmers.keys(), bipartite=1)
     g.add_nodes_from(animals.keys(), bipartite=0)
-    
+
+    # build edges according to the scenario data
     for animal, eats in animals.items():
         for e in eats:
             for farmer, has in farmers.items():
